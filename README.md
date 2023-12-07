@@ -3,7 +3,9 @@ MacOS CLI Stream player using mpv
 
 ## Requirement
 ```bash
-$ brew install gum # bgm uses gum to select stream station
+$ brew install gum lynx
+# bgm uses gum to select stream station
+# bgm uses lynx to extract URLs from websites
 ```
 
 ## Installation
@@ -20,4 +22,8 @@ $ make
 $ bgm # ask you to select station and play
 ```
 `Ctrl-C`: Quit  
-Press `Q`: Stop playing and quit
+Press `Q`: Stop playing and quit  
+Go to [mpv.io](https://mpv.io) to see mpv manual or run `man mpv`.
+
+## Misc
+Files in `~/Library/Application Support/local.bgm.stream` must be shell scripts which return single/multiple URLs, e.g., `echo "<stream_url>"`. Double-quotes the URL.
