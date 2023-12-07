@@ -8,6 +8,8 @@ $ brew install gum # bgm uses gum to select stream station
 
 ## Installation
 ```bash
+$ mkdir ~/.local
+$ cd ~/.local
 $ git clone https://github.com/alpineyahoo/bgm.git
 $ cd bgm
 $ make
