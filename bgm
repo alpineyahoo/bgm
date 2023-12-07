@@ -1,4 +1,4 @@
 #!/usr/bin/env zsh
 
 dir=$HOME/Library/"Application Support"/local.bgm.stream
-mpv --no-video --really-quiet=yes $(cat $dir/$(gum filter --limit=1 $(/bin/ls -1 $dir)))
+zsh $dir/$(gum filter --limit=1 $(/bin/ls -1 $dir)) | mpv --no-video --really-quiet=yes --shuffle --playlist=-
