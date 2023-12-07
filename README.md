@@ -1,6 +1,11 @@
 # bgm
 MacOS CLI Stream player using mpv
 
+## Requirement
+```bash
+$ brew install gum # bgm uses gum to select stream station
+```
+
 ## Installation
 ```bash
 $ git clone https://github.com/alpineyahoo/bgm.git
